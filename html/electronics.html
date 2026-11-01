@@ -1,14 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Shop electronics at Phoenix Shop: phones, laptops, headphones, TVs and more.">
+    <title>Electronics | Phoenix Shop</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/catalog.css">
 </head>
+<body id="top">
 
-<body>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="nav-top">
+        <a href="../index.html" class="nav-logo" aria-label="Phoenix Shop home">
+            <img src="../image/logo.jpg" alt="Phoenix Shop">
+        </a>
 
+        <a href="address-book.html" class="nav-deliver nav-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>
+                <small>Deliver to</small>
+                <strong>Bangladesh</strong>
+            </span>
+        </a>
+
+        <form class="nav-search" action="search-results.html" method="get" role="search">
+            <label for="search-cat" class="sr-only">Search category</label>
+            <select id="search-cat" name="category">
+                <option value="all">All</option>
+                <option value="electronics" selected>Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home-and-living">Home &amp; Living</option>
+                <option value="beauty">Beauty</option>
+                <option value="sports">Sports</option>
+            </select>
+            <label for="search-q" class="sr-only">Search Phoenix Shop</label>
+            <input type="search" id="search-q" name="q" placeholder="Search Phoenix Shop" maxlength="100">
+            <button type="submit" aria-label="Search">
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 14 15.5l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+            </button>
+        </form>
+
+        <a href="#" class="nav-lang nav-box"><span class="flag-bd" aria-hidden="true"></span><strong>EN</strong></a>
+
+        <a href="login.html" class="nav-account nav-box">
+            <small>Hello, sign in</small>
+            <strong>Account &amp; Lists</strong>
+        </a>
+
+        <a href="my-orders.html" class="nav-orders nav-box">
+            <small>Returns</small>
+            <strong>&amp; Orders</strong>
+        </a>
+
+        <a href="cart.html" class="nav-cart nav-box" aria-label="Cart, 0 items">
+            <span class="cart-icon">
+                <svg width="38" height="30" viewBox="0 0 38 30" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M2 3h5l4 17h20l4-12H10"/><circle cx="14" cy="26" r="2.2" fill="currentColor"/><circle cx="29" cy="26" r="2.2" fill="currentColor"/></svg>
+                <span class="cart-count">0</span>
+            </span>
+            <strong>Cart</strong>
+        </a>
+    </div>
+
+    <nav class="nav-sub" aria-label="Main">
+        <a href="#" class="nav-all">
+            <svg width="20" height="16" viewBox="0 0 20 16" aria-hidden="true"><path fill="currentColor" d="M0 1h20v2H0zM0 7h20v2H0zM0 13h20v2H0z"/></svg>
+            All
+        </a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Coupons</a>
+        <a href="help-support.html">Customer Service</a>
+        <a href="#">Gift Cards</a>
+        <a href="signup.html">Sell</a>
+    </nav>
+</header>
+
+<!-- ================= PAGE ================= -->
+<div class="catalog">
+
+    <!-- ---------- Sidebar filters ---------- -->
+    <aside class="filters" aria-label="Filters">
+        <section class="filter-group">
+            <h3>Department</h3>
+            <p class="filter-current">Electronics</p>
+            <ul class="filter-links">
+                <li><a href="#">Accessories &amp; Supplies</a></li>
+                <li><a href="#">Camera &amp; Photo</a></li>
+                <li><a href="#">Car &amp; Vehicle Electronics</a></li>
+                <li><a href="#">Cell Phones &amp; Accessories</a></li>
+                <li><a href="#">Computers &amp; Accessories</a></li>
+                <li><a href="#">GPS, Finders &amp; Accessories</a></li>
+                <li><a href="#">Home Audio</a></li>
+                <li><a href="#">Office Electronics</a></li>
+                <li><a href="#">Portable Audio &amp; Video</a></li>
+                <li><a href="#">Security &amp; Surveillance</a></li>
+                <li><a href="#">Television &amp; Video</a></li>
+                <li><a href="#">Video Game Consoles</a></li>
+                <li><a href="#">Wearable Technology</a></li>
+                <li><a href="#">Headphones &amp; Earbuds</a></li>
+                <li><a href="#">Power Accessories</a></li>
+            </ul>
+        </section>
+
+        <section class="filter-group">
+            <h3>Phoenix Express</h3>
+            <label class="check"><input type="checkbox" name="express"> <span class="express-badge">&#10003; express</span></label>
+        </section>
+
+        <section class="filter-group">
+            <h3>Brands</h3>
+            <label class="check"><input type="checkbox" name="brand" value="apple"> Apple</label>
+            <label class="check"><input type="checkbox" name="brand" value="samsung"> Samsung</label>
+            <label class="check"><input type="checkbox" name="brand" value="xiaomi"> Xiaomi</label>
+            <label class="check"><input type="checkbox" name="brand" value="logitech"> Logitech</label>
+            <label class="check"><input type="checkbox" name="brand" value="anker"> Anker</label>
+            <label class="check"><input type="checkbox" name="brand" value="jbl"> JBL</label>
+            <label class="check"><input type="checkbox" name="brand" value="sony"> Sony</label>
+            <label class="check"><input type="checkbox" name="brand" value="hp"> HP</label>
+        </section>
+
+        <section class="filter-group">
+            <h3>Customer Reviews</h3>
+            <a href="#" class="stars-filter"><span class="stars">★★★★☆</span> &amp; Up</a>
+        </section>
+
+        <section class="filter-group">
+            <h3>Condition</h3>
+            <label class="check"><input type="checkbox" name="condition" value="new"> New</label>
+            <label class="check"><input type="checkbox" name="condition" value="renewed"> Renewed</label>
+            <label class="check"><input type="checkbox" name="condition" value="used"> Used</label>
+        </section>
+
+        <section class="filter-group">
+            <h3>Price</h3>
+            <ul class="filter-links">
+                <li><a href="#">Under ৳2,500</a></li>
+                <li><a href="#">৳2,500 to ৳5,000</a></li>
+                <li><a href="#">৳5,000 to ৳10,000</a></li>
+                <li><a href="#">৳10,000 to ৳20,000</a></li>
+                <li><a href="#">৳20,000 &amp; Above</a></li>
+            </ul>
+            <form class="price-range" action="search-results.html" method="get">
+                <input type="number" name="min" placeholder="৳ Min" min="0" aria-label="Minimum price">
+                <input type="number" name="max" placeholder="৳ Max" min="0" aria-label="Maximum price">
+                <button type="submit">Go</button>
+            </form>
+        </section>
+
+        <section class="filter-group">
+            <h3>Deals &amp; Discounts</h3>
+            <ul class="filter-links">
+                <li><a href="#">All Discounts</a></li>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Coupons</a></li>
+            </ul>
+        </section>
+
+        <section class="filter-group">
+            <h3>Seller</h3>
+            <label class="check"><input type="checkbox" name="seller"> Phoenix Official</label>
+            <label class="check"><input type="checkbox" name="seller"> Gadget House BD</label>
+            <label class="check"><input type="checkbox" name="seller"> TechZone Dhaka</label>
+        </section>
+    </aside>
+
+    <!-- ---------- Main content ---------- -->
+    <main class="catalog-main">
+        <h1 class="cat-title">Electronics</h1>
+
+        <!-- Hero -->
+        <section class="hero" aria-label="Electronics banner">
+            <h2>Electronics</h2>
+        </section>
+
+        <!-- Shop by Category -->
+        <section class="block">
+            <h2 class="block-title">Shop by Category</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=computers" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Computers" alt="Computers"></span><span>Computers</span></a>
+                    <a href="search-results.html?q=headphones" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Headphones" alt="Headphones"></span><span>Headphones</span></a>
+                    <a href="search-results.html?q=home+audio" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Home+Audio" alt="Home Audio"></span><span>Home Audio</span></a>
+                    <a href="search-results.html?q=cell+phones" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Cell+Phones" alt="Cell Phones"></span><span>Cell Phones</span></a>
+                    <a href="search-results.html?q=wearables" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Wearables" alt="Wearable Tech"></span><span>Wearable Tech</span></a>
+                    <a href="search-results.html?q=televisions" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Televisions" alt="Televisions"></span><span>Televisions</span></a>
+                    <a href="search-results.html?q=video+games" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Video+Games" alt="Video Games"></span><span>Video Games</span></a>
+                    <a href="search-results.html?q=cameras" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Cameras" alt="Cameras"></span><span>Cameras</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Shop Samsung -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Shop Samsung</h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Galaxy+Z+Flip" alt="Samsung Galaxy Z Flip">
+                        <p class="p-title">Samsung Galaxy Z Flip 7 | 256GB | Unlocked | Mint</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">327</span></p>
+                        <p class="p-price"><sup>৳</sup>119,999</p>
+                        <p class="p-delivery">FREE delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Galaxy+A56" alt="Samsung Galaxy A56">
+                        <p class="p-title">Samsung Galaxy A56 5G | 8GB/128GB | Awesome Graphite</p>
+                        <p class="p-rating">4.2 <span class="stars">★★★★☆</span> <span class="count">2,152</span></p>
+                        <p class="p-price"><sup>৳</sup>42,999 <span class="p-list">List: <s>৳49,999</s></span></p>
+                        <p class="p-delivery">৳120 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Galaxy+S26+Ultra" alt="Samsung Galaxy S26 Ultra">
+                        <p class="p-title">Samsung Galaxy S26 Ultra | 512GB | Titanium Black</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">1,013</span></p>
+                        <p class="p-price"><sup>৳</sup>189,999</p>
+                        <p class="p-delivery">FREE delivery <strong>Sun, Nov 8</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Galaxy+Tab+S10" alt="Samsung Galaxy Tab S10">
+                        <p class="p-title">Samsung Galaxy Tab S10 FE | 11-inch | Wi-Fi | Gray</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">684</span></p>
+                        <p class="p-price"><sup>৳</sup>64,500</p>
+                        <p class="p-delivery">FREE delivery <strong>Thu, Nov 5</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Galaxy+Buds" alt="Samsung Galaxy Buds">
+                        <p class="p-title">Samsung Galaxy Buds 3 Pro | ANC | Silver</p>
+                        <p class="p-rating">4.3 <span class="stars">★★★★☆</span> <span class="count">1,675</span></p>
+                        <p class="p-price"><sup>৳</sup>22,990 <span class="p-list">List: <s>৳27,990</s></span></p>
+                        <p class="p-delivery">৳80 delivery <strong>Nov 4 - 6</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Galaxy+Watch" alt="Samsung Galaxy Watch">
+                        <p class="p-title">Samsung Galaxy Watch 8 | 44mm | Bluetooth | Graphite</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">245</span></p>
+                        <p class="p-price"><sup>৳</sup>38,500</p>
+                        <p class="p-delivery">FREE delivery <strong>Thu, Nov 5</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Samsung+T7" alt="Samsung T7 SSD">
+                        <p class="p-title">Samsung T7 Portable SSD 1TB | USB 3.2 | Blue</p>
+                        <p class="p-rating">4.8 <span class="stars">★★★★★</span> <span class="count">5,410</span></p>
+                        <p class="p-price"><sup>৳</sup>11,900</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Phone accessories -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Shop Phone Accessories</h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Phone+Grip" alt="Phone grip">
+                        <p class="p-title">Magnetic Phone Grip &amp; Stand for iPhone and Galaxy</p>
+                        <p class="p-rating">4.6 <span class="stars">★★★★★</span> <span class="count">2,719</span></p>
+                        <p class="p-price"><sup>৳</sup>1,250 <span class="p-list">List: <s>৳1,500</s></span></p>
+                        <p class="p-delivery">৳60 delivery <strong>Nov 4 - 8</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Wallet+Case" alt="Wallet case">
+                        <p class="p-title">Kick-Out Wallet Case with MagSafe | Black</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">1,639</span></p>
+                        <p class="p-price"><sup>৳</sup>1,890</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=65W+Charger" alt="65W charger">
+                        <p class="p-title">Anker 65W GaN USB-C Fast Charger | 3 Ports</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">8,031</span></p>
+                        <p class="p-price"><sup>৳</sup>4,450</p>
+                        <p class="p-delivery">FREE delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Power+Bank" alt="Power bank">
+                        <p class="p-title">Xiaomi 20000mAh Power Bank | 22.5W | Black</p>
+                        <p class="p-rating">4.3 <span class="stars">★★★★☆</span> <span class="count">550</span></p>
+                        <p class="p-price"><sup>৳</sup>2,799 <span class="p-list">List: <s>৳3,200</s></span></p>
+                        <p class="p-delivery">৳60 delivery <strong>Thu, Nov 5</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Screen+Guard" alt="Screen protector">
+                        <p class="p-title">Tempered Glass Screen Protector | 3-Pack | 9H</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">3,092</span></p>
+                        <p class="p-price"><sup>৳</sup>650</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=USB-C+Cable" alt="USB-C cable">
+                        <p class="p-title">Braided USB-C to USB-C Cable 2m | 100W</p>
+                        <p class="p-rating">4.6 <span class="stars">★★★★★</span> <span class="count">337</span></p>
+                        <p class="p-price"><sup>৳</sup>590</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Tech deals -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Tech deals for you</h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Silicone+Case" alt="Silicone case">
+                        <p class="p-title">Magnetic Silicone Case for iPhone 16 | Pink</p>
+                        <p class="p-deal"><span class="deal-badge">19% off</span> <span class="deal-text">Limited time deal</span></p>
+                        <p class="p-price"><sup>৳</sup>890 <span class="p-list">Typical: <s>৳1,100</s></span></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=microSD+512GB" alt="microSD card">
+                        <p class="p-title">Samsung EVO Plus microSDXC 512GB | U3 A2</p>
+                        <p class="p-deal"><span class="deal-badge">34% off</span> <span class="deal-text">Limited time deal</span></p>
+                        <p class="p-price"><sup>৳</sup>4,990 <span class="p-list">List: <s>৳7,500</s></span></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Clear+Case" alt="Clear case">
+                        <p class="p-title">Shockproof Clear Case with Camera Guard</p>
+                        <p class="p-deal"><span class="deal-badge">44% off</span> <span class="deal-text">Ends in 20:55:07</span></p>
+                        <p class="p-price"><sup>৳</sup>450 <span class="p-list">Typical: <s>৳800</s></span></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Smart+Band" alt="Smart band">
+                        <p class="p-title">Xiaomi Smart Band 9 | AMOLED | 21-Day Battery</p>
+                        <p class="p-deal"><span class="deal-badge">12% off</span> <span class="deal-text">Limited time deal</span></p>
+                        <p class="p-price"><sup>৳</sup>4,290 <span class="p-list">List: <s>৳4,890</s></span></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Privacy+Glass" alt="Privacy screen protector">
+                        <p class="p-title">Privacy Screen Protector + Lens Guard | 2-Pack</p>
+                        <p class="p-deal"><span class="deal-badge">50% off</span> <span class="deal-text">Limited time deal</span></p>
+                        <p class="p-price"><sup>৳</sup>699 <span class="p-list">List: <s>৳1,400</s></span></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Laptop+Backpack" alt="Laptop backpack">
+                        <p class="p-title">Water-Resistant Laptop Backpack 15.6&quot; | USB Port</p>
+                        <p class="p-deal"><span class="deal-badge">12% off</span> <span class="deal-text">Ends in 20:55:07</span></p>
+                        <p class="p-price"><sup>৳</sup>2,850 <span class="p-list">Typical: <s>৳3,250</s></span></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Promo banner -->
+        <section class="promo">
+            <div class="promo-text">
+                <h2>Smarter picture,<br>pixel by pixel</h2>
+                <p>4K OLED TVs with Dolby Vision — now with free wall mount.</p>
+                <a href="search-results.html?q=oled+tv">Shop now</a>
+            </div>
+            <div class="promo-img">
+                <img src="https://placehold.co/460x260/0b2a6f/ffffff?text=OLED+TV" alt="OLED TV">
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Shop featured products</h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Ink+Tank+Printer" alt="Ink tank printer">
+                        <p class="p-title">Canon PIXMA G3770 Ink Tank Wireless Printer</p>
+                        <p class="p-rating">4.1 <span class="stars">★★★★☆</span> <span class="count">887</span></p>
+                        <p class="p-price"><sup>৳</sup>24,900 <span class="p-list">List: <s>৳26,900</s></span></p>
+                        <p class="p-delivery">৳250 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=NVMe+SSD+1TB" alt="NVMe SSD">
+                        <p class="p-title">Samsung 990 PRO 1TB NVMe M.2 SSD | PCIe 4.0</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">2,027</span></p>
+                        <p class="p-price"><sup>৳</sup>15,500 <span class="p-list">List: <s>৳18,000</s></span></p>
+                        <p class="p-delivery">FREE delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Wireless+Mouse" alt="Wireless mouse">
+                        <p class="p-title">Logitech MX Master 3S Wireless Mouse | Graphite</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">54</span></p>
+                        <p class="p-price"><sup>৳</sup>11,500</p>
+                        <p class="p-delivery">FREE delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Monitor+27" alt="27 inch monitor">
+                        <p class="p-title">27&quot; QHD IPS Monitor | 165Hz | 1ms | HDR10</p>
+                        <p class="p-rating">4.9 <span class="stars">★★★★★</span> <span class="count">35</span></p>
+                        <p class="p-price"><sup>৳</sup>32,500</p>
+                        <p class="p-delivery">৳300 delivery <strong>Thu, Nov 5</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Keyboard" alt="Mechanical keyboard">
+                        <p class="p-title">Wireless Mechanical Keyboard | Hot-Swap | RGB</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">13</span></p>
+                        <p class="p-price"><sup>৳</sup>7,850</p>
+                        <p class="p-delivery">৳80 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1a56db?text=Laptop" alt="Laptop">
+                        <p class="p-title">HP 15 Laptop | Core i5 13th Gen | 16GB | 512GB SSD</p>
+                        <p class="p-rating">5.0 <span class="stars">★★★★★</span> <span class="count">3</span></p>
+                        <p class="p-price"><sup>৳</sup>78,999</p>
+                        <p class="p-delivery">FREE delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Latest & greatest -->
+        <section class="block">
+            <h2 class="block-title">Latest &amp; greatest in tech</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=new" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=New+Arrivals" alt="New arrivals"></span><span>New Arrivals</span></a>
+                    <a href="search-results.html?q=top+brands" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Top+Brands" alt="Top brands"></span><span>Top Brands</span></a>
+                    <a href="search-results.html?q=accessories" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Accessories" alt="Accessories"></span><span>Accessories</span></a>
+                    <a href="search-results.html?q=fitness" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Fitness+Tech" alt="Fitness tech"></span><span>Fitness Tech</span></a>
+                    <a href="search-results.html?q=trade-in" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Trade-In" alt="Phone trade-in"></span><span>Phone Trade-In</span></a>
+                    <a href="search-results.html?q=studio" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Studio" alt="Studio upgrades"></span><span>Studio Upgrades</span></a>
+                    <a href="search-results.html?q=home+entertainment" class="tile"><span class="tile-img"><img src="https://placehold.co/300x300/1a56db/ffffff?text=Home+Ent." alt="Home entertainment"></span><span>Home Entertainment</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Feature cards -->
+        <section class="features">
+            <a href="search-results.html?q=phoenix+devices" class="feature">
+                <img src="https://placehold.co/480x480/dbe6ff/1a56db?text=Smart+Home" alt="Smart home devices">
+                <h3>Smart home</h3>
+                <p>Smart speakers, displays, plugs and cameras.</p>
+            </a>
+            <a href="search-results.html?q=renewed" class="feature">
+                <img src="https://placehold.co/480x480/dbe6ff/1a56db?text=Renewed" alt="Renewed products">
+                <h3>Renewed</h3>
+                <p>Expertly refurbished products at great prices.</p>
+            </a>
+            <a href="search-results.html?q=handpicked" class="feature">
+                <img src="https://placehold.co/480x480/dbe6ff/1a56db?text=Handpicked" alt="Handpicked products">
+                <h3>Handpicked</h3>
+                <p>We've done the research so you don't have to.</p>
+            </a>
+        </section>
+
+        <!-- Slim banner -->
+        <a href="search-results.html?q=tracker" class="slim-banner">
+            <span class="slim-brand">SmartTag</span>
+            <span class="slim-text">The most findable tracker yet</span>
+            <span class="slim-cta">Shop now</span>
+        </a>
+
+        <!-- Shop by brand -->
+        <section class="block">
+            <h2 class="block-title">Shop by brand</h2>
+            <div class="brand-grid">
+                <a href="search-results.html?q=apple" class="brand">Apple</a>
+                <a href="search-results.html?q=samsung" class="brand">Samsung</a>
+                <a href="search-results.html?q=xiaomi" class="brand">Xiaomi</a>
+                <a href="search-results.html?q=hp" class="brand">HP</a>
+                <a href="search-results.html?q=sony" class="brand">Sony</a>
+                <a href="search-results.html?q=jbl" class="brand">JBL</a>
+                <a href="search-results.html?q=bose" class="brand">Bose</a>
+                <a href="search-results.html?q=canon" class="brand">Canon</a>
+                <a href="search-results.html?q=microsoft" class="brand">Microsoft</a>
+                <a href="search-results.html?q=asus" class="brand">ASUS</a>
+                <a href="search-results.html?q=logitech" class="brand">Logitech</a>
+                <a href="search-results.html?q=lenovo" class="brand">Lenovo</a>
+                <a href="search-results.html?q=lg" class="brand">LG</a>
+                <a href="search-results.html?q=dji" class="brand">DJI</a>
+                <a href="search-results.html?q=epson" class="brand">Epson</a>
+                <a href="search-results.html?q=anker" class="brand">Anker</a>
+                <a href="search-results.html?q=walton" class="brand">Walton</a>
+                <a href="search-results.html?q=realme" class="brand">realme</a>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <a href="#top" class="ft-backtop">Back to top</a>
+
+    <div class="ft-cols">
+        <div>
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="about.html">About Phoenix Shop</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press Releases</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="signup.html">Sell on Phoenix Shop</a></li>
+                <li><a href="signup.html">Become a Delivery Agent</a></li>
+                <li><a href="#">Become an Affiliate</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Payment Methods</h4>
+            <ul>
+                <li><a href="#">bKash &amp; Nagad</a></li>
+                <li><a href="#">Visa &amp; Mastercard</a></li>
+                <li><a href="#">Cash on Delivery</a></li>
+                <li><a href="#">Phoenix Gift Cards</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="customer-dashboard.html">Your Account</a></li>
+                <li><a href="my-orders.html">Your Orders</a></li>
+                <li><a href="#">Shipping Rates &amp; Policies</a></li>
+                <li><a href="returns-refunds.html">Returns &amp; Replacements</a></li>
+                <li><a href="help-support.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ft-mid">
+        <a href="../index.html" class="ft-logo"><img src="../image/logo.jpg" alt="Phoenix Shop"></a>
+        <span class="ft-select">🌐 English</span>
+        <span class="ft-select">৳ BDT - Bangladeshi Taka</span>
+        <span class="ft-select">Bangladesh</span>
+    </div>
+
+    <div class="ft-bottom">
+        <ul>
+            <li><a href="terms.html">Conditions of Use</a></li>
+            <li><a href="privacy.html">Privacy Notice</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2026, Phoenix Shop or its affiliates</p>
+    </div>
+</footer>
+
+<script>
+    // Right-arrow buttons scroll their row (page works without this too)
+    document.querySelectorAll('.scroll-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var row = btn.previousElementSibling;
+            row.scrollBy({ left: row.clientWidth * 0.8, behavior: 'smooth' });
+        });
+    });
+</script>
 </body>
-
 </html>
