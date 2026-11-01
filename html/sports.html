@@ -1,14 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Shop sports and outdoor gear at Phoenix Shop: cricket, football, fitness, camping and more.">
+    <title>Sports &amp; Outdoors | Phoenix Shop</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sports-catalog.css">
 </head>
+<body id="top" class="theme-sports">
 
-<body>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="nav-top">
+        <a href="../index.html" class="nav-logo" aria-label="Phoenix Shop home">
+            <img src="../image/logo.jpg" alt="Phoenix Shop">
+        </a>
 
+        <a href="address-book.html" class="nav-deliver nav-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <span><small>Deliver to</small><strong>Bangladesh</strong></span>
+        </a>
+
+        <form class="nav-search" action="search-results.html" method="get" role="search">
+            <label for="search-cat" class="sr-only">Search category</label>
+            <select id="search-cat" name="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home-and-living">Home &amp; Living</option>
+                <option value="beauty">Beauty</option>
+                <option value="sports" selected>Sports</option>
+            </select>
+            <label for="search-q" class="sr-only">Search Phoenix Shop</label>
+            <input type="search" id="search-q" name="q" placeholder="Search Phoenix Shop" maxlength="100">
+            <button type="submit" aria-label="Search">
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 14 15.5l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+            </button>
+        </form>
+
+        <a href="#" class="nav-lang nav-box"><span class="flag-bd" aria-hidden="true"></span><strong>EN</strong></a>
+
+        <a href="login.html" class="nav-account nav-box">
+            <small>Hello, sign in</small>
+            <strong>Account &amp; Lists</strong>
+        </a>
+
+        <a href="my-orders.html" class="nav-orders nav-box">
+            <small>Returns</small>
+            <strong>&amp; Orders</strong>
+        </a>
+
+        <a href="cart.html" class="nav-cart nav-box" aria-label="Cart, 0 items">
+            <span class="cart-icon">
+                <svg width="38" height="30" viewBox="0 0 38 30" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M2 3h5l4 17h20l4-12H10"/><circle cx="14" cy="26" r="2.2" fill="currentColor"/><circle cx="29" cy="26" r="2.2" fill="currentColor"/></svg>
+                <span class="cart-count">0</span>
+            </span>
+            <strong>Cart</strong>
+        </a>
+    </div>
+
+    <nav class="nav-sub" aria-label="Main">
+        <a href="#" class="nav-all">
+            <svg width="20" height="16" viewBox="0 0 20 16" aria-hidden="true"><path fill="currentColor" d="M0 1h20v2H0zM0 7h20v2H0zM0 13h20v2H0z"/></svg>
+            All
+        </a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Coupons</a>
+        <a href="help-support.html">Customer Service</a>
+        <a href="#">Gift Cards</a>
+        <a href="signup.html">Sell</a>
+    </nav>
+</header>
+
+<!-- ================= PAGE ================= -->
+<div class="catalog no-sidebar">
+    <main class="catalog-main">
+        <h1 class="cat-title">Sports &amp; Outdoors</h1>
+
+        <!-- Explore -->
+        <section class="block">
+            <h2 class="block-title">Explore Sports &amp; Outdoors</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=new+sports" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=New+Arrivals" alt="New arrivals"></span><span>New Arrivals</span></a>
+                    <a href="search-results.html?q=sports" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=Sports" alt="Sports"></span><span>Sports</span></a>
+                    <a href="search-results.html?q=outdoors" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=Outdoors" alt="Outdoors"></span><span>Outdoors</span></a>
+                    <a href="search-results.html?q=fitness" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=Fitness" alt="Fitness"></span><span>Fitness</span></a>
+                    <a href="search-results.html?q=fan+shop" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=Fan+Shop" alt="Fan shop"></span><span>Fan Shop</span></a>
+                    <a href="search-results.html?q=games" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=Games" alt="Games"></span><span>Games</span></a>
+                    <a href="search-results.html?q=sports+deals" class="tile tile-short"><span class="tile-img"><img src="https://placehold.co/300x200/1f7a4d/ffffff?text=Deals" alt="Sales and deals"></span><span>Sales and deals</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Big promo cards -->
+        <section class="block">
+            <div class="scroller">
+                <div class="tile-row promo-row">
+                    <a href="search-results.html?q=camping" class="promo-card">
+                        <img src="https://placehold.co/400x570/2d5a3d/ffffff?text=Camping" alt="Camping and hiking gear">
+                        <span>Explore camping &amp; hiking gear</span>
+                    </a>
+                    <a href="search-results.html?q=home+gym" class="promo-card">
+                        <img src="https://placehold.co/400x570/3b4a3f/ffffff?text=Home+Gym" alt="Home gym equipment">
+                        <span>Build your home gym</span>
+                    </a>
+                    <a href="search-results.html?q=cricket" class="promo-card">
+                        <img src="https://placehold.co/400x570/4d6b3a/ffffff?text=Cricket" alt="Cricket gear">
+                        <span>Gear up for cricket season</span>
+                    </a>
+                    <a href="search-results.html?q=running" class="promo-card">
+                        <img src="https://placehold.co/400x570/5a4632/ffffff?text=Running" alt="Running gear">
+                        <span>Discover gear to match your pace</span>
+                    </a>
+                    <a href="search-results.html?q=badminton" class="promo-card">
+                        <img src="https://placehold.co/400x570/2f6f6a/ffffff?text=Badminton" alt="Badminton gear">
+                        <span>Find badminton rackets &amp; shuttles</span>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Rep your team -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Rep your team <a href="search-results.html?q=jerseys" class="see-more">See more</a></h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="search-results.html?q=jerseys" class="lead-card"><img src="https://placehold.co/300x400/1f7a4d/ffffff?text=Team+Jerseys" alt="Team jerseys"></a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Cricket+Jersey" alt="Cricket jersey">
+                        <p class="p-title">Bangladesh Cricket Fan Jersey 2026 | Green</p>
+                        <p class="p-rating">4.6 <span class="stars">★★★★★</span> <span class="count">1,122</span></p>
+                        <p class="p-price"><sup>৳</sup>1,450</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Fan+Cap" alt="Fan cap">
+                        <p class="p-title">Team Logo Snapback Cap | Adjustable</p>
+                        <p class="p-rating">4.8 <span class="stars">★★★★★</span> <span class="count">357</span></p>
+                        <p class="p-price"><sup>৳</sup>650</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Football+Kit" alt="Football kit">
+                        <p class="p-title">Club Football Home Kit | Shirt + Shorts</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">19,242</span></p>
+                        <p class="p-price"><sup>৳</sup>1,890 <span class="p-list">List: <s>৳2,300</s></span></p>
+                        <p class="p-delivery">৳60 delivery <strong>Thu, Nov 5</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Fan+Hoodie" alt="Fan hoodie">
+                        <p class="p-title">Unisex Fan Hoodie | Fleece | Black</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">96</span></p>
+                        <p class="p-price"><sup>৳</sup>2,350</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Quarter+Zip" alt="Quarter zip">
+                        <p class="p-title">Men's Training Quarter Zip | Navy</p>
+                        <p class="p-rating">4.6 <span class="stars">★★★★★</span> <span class="count">1,308</span></p>
+                        <p class="p-price"><sup>৳</sup>1,990</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Category: sports -->
+        <section class="block">
+            <h2 class="block-title">Shop by category: sports</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=cricket" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/3d7a3a/ffffff?text=Cricket" alt="Cricket"></span><span>Cricket</span></a>
+                    <a href="search-results.html?q=football" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/2f6b3d/ffffff?text=Football" alt="Football"></span><span>Football</span></a>
+                    <a href="search-results.html?q=badminton" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/2a5f75/ffffff?text=Badminton" alt="Badminton"></span><span>Badminton</span></a>
+                    <a href="search-results.html?q=tennis" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/1f6f8b/ffffff?text=Tennis" alt="Tennis"></span><span>Tennis</span></a>
+                    <a href="search-results.html?q=table+tennis" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/6b3d2f/ffffff?text=Table+Tennis" alt="Table tennis"></span><span>Table Tennis</span></a>
+                    <a href="search-results.html?q=basketball" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/8b4a1f/ffffff?text=Basketball" alt="Basketball"></span><span>Basketball</span></a>
+                    <a href="search-results.html?q=volleyball" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/4a5f8b/ffffff?text=Volleyball" alt="Volleyball"></span><span>Volleyball</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Cricket season -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Get ready for cricket season <a href="search-results.html?q=cricket" class="see-more">See more</a></h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="search-results.html?q=cricket" class="lead-card"><img src="https://placehold.co/300x400/1f7a4d/ffffff?text=Cricket+Season" alt="Cricket season"></a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Cricket+Bat" alt="Cricket bat">
+                        <p class="p-title">English Willow Cricket Bat | Short Handle</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">87</span></p>
+                        <p class="p-price"><sup>৳</sup>12,500</p>
+                        <p class="p-delivery">৳120 delivery <strong>Nov 4 - 8</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Helmet" alt="Cricket helmet">
+                        <p class="p-title">Cricket Helmet with Steel Grill | Adult</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">852</span></p>
+                        <p class="p-price"><sup>৳</sup>3,990</p>
+                        <p class="p-delivery">৳100 delivery <strong>Thu, Nov 5</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Leather+Ball" alt="Leather ball">
+                        <p class="p-title">Leather Cricket Ball | 4-Piece | Red | 156g</p>
+                        <p class="p-rating">4.8 <span class="stars">★★★★★</span> <span class="count">1,439</span></p>
+                        <p class="p-price"><sup>৳</sup>850</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Batting+Pads" alt="Batting pads">
+                        <p class="p-title">Lightweight Batting Pads | Men's</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">112</span></p>
+                        <p class="p-price"><sup>৳</sup>2,750</p>
+                        <p class="p-delivery">৳100 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Kit+Bag" alt="Cricket kit bag">
+                        <p class="p-title">Cricket Kit Bag with Wheels | Duffle</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">37</span></p>
+                        <p class="p-price"><sup>৳</sup>4,200 <span class="p-list">List: <s>৳5,000</s></span></p>
+                        <p class="p-delivery">৳150 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Category: outdoors -->
+        <section class="block">
+            <h2 class="block-title">Shop by category: outdoors</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=cycling" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/556b2f/ffffff?text=Cycling" alt="Cycling"></span><span>Cycling</span></a>
+                    <a href="search-results.html?q=camping" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/8b6b1f/ffffff?text=Camping" alt="Camping and hiking"></span><span>Camping &amp; Hiking</span></a>
+                    <a href="search-results.html?q=fishing" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/1f5f8b/ffffff?text=Fishing" alt="Fishing"></span><span>Fishing</span></a>
+                    <a href="search-results.html?q=outdoor+games" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/6b8b2f/ffffff?text=Outdoor+Games" alt="Outdoor games"></span><span>Outdoor games</span></a>
+                    <a href="search-results.html?q=swimming" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/1f8b8b/ffffff?text=Swimming" alt="Swimming"></span><span>Swimming</span></a>
+                    <a href="search-results.html?q=climbing" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/8b5a2f/ffffff?text=Climbing" alt="Climbing"></span><span>Climbing</span></a>
+                    <a href="search-results.html?q=skating" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/5a5a8b/ffffff?text=Skating" alt="Skating"></span><span>Skating</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Camping equipment -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Camping equipment <a href="search-results.html?q=camping" class="see-more">See more</a></h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="search-results.html?q=camping" class="lead-card"><img src="https://placehold.co/300x400/1f7a4d/ffffff?text=Camping+Gear" alt="Camping gear"></a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Dome+Tent" alt="Dome tent">
+                        <p class="p-title">2-4 Person Waterproof Dome Camping Tent</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">2,531</span></p>
+                        <p class="p-price"><sup>৳</sup>5,490</p>
+                        <p class="p-delivery">৳150 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Camping+Fan" alt="Camping fan">
+                        <p class="p-title">3-in-1 Rechargeable Camping Fan with LED Light</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">410</span></p>
+                        <p class="p-price"><sup>৳</sup>3,250</p>
+                        <p class="p-delivery">৳100 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Folding+Chair" alt="Folding chair">
+                        <p class="p-title">Folding Camping Chair with Cup Holder | Blue</p>
+                        <p class="p-rating">4.6 <span class="stars">★★★★★</span> <span class="count">8,904</span></p>
+                        <p class="p-price"><sup>৳</sup>1,990</p>
+                        <p class="p-delivery">৳100 delivery <strong>Sun, Nov 8</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Walkie+Talkie" alt="Walkie talkies">
+                        <p class="p-title">Long Range Walkie Talkies | 2-Pack | Rechargeable</p>
+                        <p class="p-rating">4.3 <span class="stars">★★★★☆</span> <span class="count">1,207</span></p>
+                        <p class="p-price"><sup>৳</sup>3,800</p>
+                        <p class="p-delivery">৳80 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Hiking+Bag" alt="Hiking backpack">
+                        <p class="p-title">40L Hiking Backpack | Water-Resistant | Rain Cover</p>
+                        <p class="p-rating">4.6 <span class="stars">★★★★★</span> <span class="count">642</span></p>
+                        <p class="p-price"><sup>৳</sup>2,890 <span class="p-list">List: <s>৳3,400</s></span></p>
+                        <p class="p-delivery">৳100 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Category: fitness -->
+        <section class="block">
+            <h2 class="block-title">Shop by category: exercise &amp; fitness</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=running" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/8b6b4a/ffffff?text=Running" alt="Running"></span><span>Running</span></a>
+                    <a href="search-results.html?q=yoga" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/8b7a5a/ffffff?text=Yoga" alt="Yoga"></span><span>Yoga</span></a>
+                    <a href="search-results.html?q=strength" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/4a4a4a/ffffff?text=Strength" alt="Strength training"></span><span>Strength training</span></a>
+                    <a href="search-results.html?q=cardio" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/3a3a3a/ffffff?text=Cardio" alt="Cardio training"></span><span>Cardio training</span></a>
+                    <a href="search-results.html?q=recovery" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/9a9a9a/ffffff?text=Recovery" alt="Recovery and wellness"></span><span>Recovery &amp; wellness</span></a>
+                    <a href="search-results.html?q=activewear" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/2f8b6b/ffffff?text=Activewear" alt="Activewear"></span><span>Activewear</span></a>
+                    <a href="search-results.html?q=sports+shoes" class="tile tile-photo"><span class="tile-img"><img src="https://placehold.co/300x200/6b4a3a/ffffff?text=Shoes" alt="Sports shoes"></span><span>Shoes</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Weekend picnic -->
+        <section class="block carousel">
+            <h2 class="carousel-title">Weekend picnic season <a href="search-results.html?q=picnic" class="see-more">See more</a></h2>
+            <div class="scroller">
+                <div class="card-row">
+                    <a href="search-results.html?q=picnic" class="lead-card"><img src="https://placehold.co/300x400/1f7a4d/ffffff?text=Picnic" alt="Picnic"></a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=BBQ+Grill" alt="BBQ grill">
+                        <p class="p-title">Portable Folding Charcoal BBQ Grill</p>
+                        <p class="p-rating">3.7 <span class="stars">★★★★☆</span> <span class="count">121</span></p>
+                        <p class="p-price"><sup>৳</sup>2,450</p>
+                        <p class="p-delivery">৳120 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Playing+Cards" alt="Playing cards">
+                        <p class="p-title">Waterproof Plastic Playing Cards | 2 Decks</p>
+                        <p class="p-rating">4.7 <span class="stars">★★★★★</span> <span class="count">25,032</span></p>
+                        <p class="p-price"><sup>৳</sup>390 <span class="p-list">List: <s>৳500</s></span></p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Picnic+Mat" alt="Picnic mat">
+                        <p class="p-title">Waterproof Picnic Mat 2x2m | Foldable</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">112</span></p>
+                        <p class="p-price"><sup>৳</sup>990</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=Water+Bottle" alt="Water bottle">
+                        <p class="p-title">Insulated Sports Water Bottle 1L | Steel</p>
+                        <p class="p-rating">4.4 <span class="stars">★★★★☆</span> <span class="count">366</span></p>
+                        <p class="p-price"><sup>৳</sup>850</p>
+                        <p class="p-delivery">৳60 delivery <strong>Wed, Nov 4</strong></p>
+                    </a>
+                    <a href="product-details.html" class="product-card">
+                        <img src="https://placehold.co/300x300/ffffff/1f7a4d?text=BT+Speaker" alt="Bluetooth speaker">
+                        <p class="p-title">Portable Party Bluetooth Speaker | 60W</p>
+                        <p class="p-rating">4.5 <span class="stars">★★★★☆</span> <span class="count">693</span></p>
+                        <p class="p-price"><sup>৳</sup>8,990</p>
+                        <p class="p-delivery">৳150 delivery <strong>Sun, Nov 8</strong></p>
+                    </a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Shop by brand -->
+        <section class="block">
+            <h2 class="block-title">Shop by brand</h2>
+            <div class="scroller">
+                <div class="tile-row">
+                    <a href="search-results.html?q=nike" class="tile tile-short"><span class="tile-img brand-tile">Nike</span><span>Nike</span></a>
+                    <a href="search-results.html?q=adidas" class="tile tile-short"><span class="tile-img brand-tile">adidas</span><span>adidas</span></a>
+                    <a href="search-results.html?q=puma" class="tile tile-short"><span class="tile-img brand-tile">PUMA</span><span>PUMA</span></a>
+                    <a href="search-results.html?q=yonex" class="tile tile-short"><span class="tile-img brand-tile">YONEX</span><span>Yonex</span></a>
+                    <a href="search-results.html?q=sg" class="tile tile-short"><span class="tile-img brand-tile">SG</span><span>SG</span></a>
+                    <a href="search-results.html?q=decathlon" class="tile tile-short"><span class="tile-img brand-tile">Decathlon</span><span>Decathlon</span></a>
+                    <a href="search-results.html?q=wilson" class="tile tile-short"><span class="tile-img brand-tile">Wilson</span><span>Wilson</span></a>
+                </div>
+                <button class="scroll-btn" type="button" aria-label="Scroll right">&#8250;</button>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <a href="#top" class="ft-backtop">Back to top</a>
+
+    <div class="ft-cols">
+        <div>
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="about.html">About Phoenix Shop</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press Releases</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="signup.html">Sell on Phoenix Shop</a></li>
+                <li><a href="signup.html">Become a Delivery Agent</a></li>
+                <li><a href="#">Become an Affiliate</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Payment Methods</h4>
+            <ul>
+                <li><a href="#">bKash &amp; Nagad</a></li>
+                <li><a href="#">Visa &amp; Mastercard</a></li>
+                <li><a href="#">Cash on Delivery</a></li>
+                <li><a href="#">Phoenix Gift Cards</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="customer-dashboard.html">Your Account</a></li>
+                <li><a href="my-orders.html">Your Orders</a></li>
+                <li><a href="#">Shipping Rates &amp; Policies</a></li>
+                <li><a href="returns-refunds.html">Returns &amp; Replacements</a></li>
+                <li><a href="help-support.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ft-mid">
+        <a href="../index.html" class="ft-logo"><img src="../image/logo.jpg" alt="Phoenix Shop"></a>
+        <span class="ft-select">🌐 English</span>
+        <span class="ft-select">৳ BDT - Bangladeshi Taka</span>
+        <span class="ft-select">Bangladesh</span>
+    </div>
+
+    <div class="ft-bottom">
+        <ul>
+            <li><a href="terms.html">Conditions of Use</a></li>
+            <li><a href="privacy.html">Privacy Notice</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2026, Phoenix Shop or its affiliates</p>
+    </div>
+</footer>
+
+<script>
+    // Right-arrow buttons scroll their row (page works without this too)
+    document.querySelectorAll('.scroll-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var row = btn.previousElementSibling;
+            row.scrollBy({ left: row.clientWidth * 0.8, behavior: 'smooth' });
+        });
+    });
+</script>
 </body>
-
 </html>
